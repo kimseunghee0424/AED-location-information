@@ -1,5 +1,3 @@
--탐구 1-
-
 import networkx as nx
 
 School = nx.Graph()
