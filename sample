@@ -1,0 +1,13 @@
+pip install streamlit	# pip 사용시
+poetry add streamlit	# poetry 사용시
+# streamlit_app.py 
+
+import streamlit as st
+
+# 슬라이더 생성
+x = st.slider("Select a value")
+
+# 생성된 값 출력
+st.write(x, "squared is", x * x)
+
+$ streamlit run streamlit_app.py
