@@ -1,3 +1,6 @@
+pip install streamlit	# pip 사용시
+poetry add streamlit	# poetry 사용시
+
 import networkx as nx
 
 School = nx.Graph()
@@ -165,3 +168,5 @@ if not top_2:
 else:
     for i, (path, cost) in enumerate(top_2, 1):
         print(f"{i}. 경로: {' → '.join(path)} | 총 거리: {cost:.2f}m")
+
+$ streamlit run streamlit_app.py
