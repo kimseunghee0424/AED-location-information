@@ -1,5 +1,8 @@
-pip install streamlit	# pip 사용시
-poetry add streamlit	# poetry 사용시
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+st.title('AED location information')
 
 import networkx as nx
 
@@ -169,4 +172,4 @@ else:
     for i, (path, cost) in enumerate(top_2, 1):
         print(f"{i}. 경로: {' → '.join(path)} | 총 거리: {cost:.2f}m")
 
-$ streamlit run streamlit_app.py
+
