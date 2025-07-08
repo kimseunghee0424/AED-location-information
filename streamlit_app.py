@@ -1,10 +1,6 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-
-st.title('AED location information')
-
 import networkx as nx
+st.title('AED location information')
 
 School = nx.Graph()
 edges = [
